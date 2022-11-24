@@ -36,7 +36,7 @@ class ProductControler {
                 product.id = lastId + 1
             }
             products.push(product)
-            console.log(products);
+            // console.log(products);
             res.redirect("/")
         } catch (error) {
             console.log("Error en addProduct", error);

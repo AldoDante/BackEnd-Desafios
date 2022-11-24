@@ -4,7 +4,6 @@ const path = require("path")
 const app = express()
 const routes = require("./routes/index")
 const mainRoute = require("./routes/mainIndex")
-const { engine } = require("express-handlebars")
 const PORT = 8080
 
 
@@ -15,14 +14,9 @@ app.use("/", mainRoute)
 app.use("/api/productos", routes)
 
 
-app.engine(".hbs", engine({
-    extname: ".hbs",
-    defaultLayout: "main.hbs",
-    layoutsDir: path.join(__dirname, "public/views/layouts"),
-    partialsDir: path.join(__dirname, "public/views/partials")
-}))
-app.set("view engine", "hbs")
+
 app.set("views", path.join(__dirname, "/public/views"))
+app.set("view engine", "pug")
 
 
 app.listen(PORT, (error) => {

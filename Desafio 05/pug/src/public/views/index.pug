@@ -1,0 +1,18 @@
+extends main 
+block index
+  body
+    h1(class="text-center my-5")="Pug" 
+    div(class="container my-5 d-flex justify-content-center")
+      form(action="./api/productos" method="post" class="col-6 bg-dark p-3 rounded")
+        div(class="form mb-3")
+          input(type="text" class="form-control" id="floatingInput" placeholder="Nombre del producto" name="title")
+          
+        div(class="form mb-3")
+          input(type="number" class="form-control" id="floatingInput" placeholder="Precio del producto $" name="price")
+         
+        div(class="form mb-3")
+          input(type="text" class="form-control" id="floatingInput" placeholder="URL de la foto del producto" name="thumbnail")
+          
+        button(type="submit" class="btn btn-primary")="ENVIAR"
+        a(href="/api/productos" class="align-self-center")
+          button(class="btn btn-secondary my-5" type="button")="Ir a productos"
