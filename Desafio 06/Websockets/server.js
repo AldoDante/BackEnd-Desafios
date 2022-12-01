@@ -2,7 +2,7 @@
 const express = require('express');     
 const {Server: HttpServer} = require('http');   
 const {Server: IOServer} = require('socket.io');    
-
+const ProductControler = require('./controllers/ProductControler');
 
 /* Creating a new instance of the HttpServer class and passing the express app to it. Then it is
 creating a new instance of the IOServer class and passing the httpServer to it. */
@@ -20,12 +20,12 @@ app.use(express.static('public'))
 
 
 const messages = [
-    { author: 'Pablo', text: 'Hola, que tal' },
-    { author: 'Marcelo', text: 'muy bien y tu?' },
-    { author: 'Belen', text: 'Hola!!' }
+    { author: 'Pablo@msn.com', text: 'Hola, que tal' },
+    { author: 'Marcelo@gmail.com', text: 'muy bien y tu?' },
+    { author: 'Belen@hotmail.com', text: 'Hola!!' }
 ]
 const Products = [
-    { title: 'agua', price: 20, thumbnail: 'https://dummyimage.com/250/000/fff'}
+    { title: 'Monitor', price: 30000, thumbnail: 'https://cdn0.iconfinder.com/data/icons/devices-42/512/Normal_LCD-512.png'}
 ]
 
 // Implementacion/ configuracion de socket
