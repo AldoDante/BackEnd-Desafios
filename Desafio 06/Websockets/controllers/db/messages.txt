@@ -1,0 +1,17 @@
+[
+  {
+    "author": "Aldo@hotmail.com",
+    "text": "Prueba",
+    "id": 1
+  },
+  {
+    "author": "Aldo@hotmail.com",
+    "text": "de mensajes",
+    "id": 2
+  },
+  {
+    "author": "Aldo@hotmail.com",
+    "text": "guardados",
+    "id": 3
+  }
+]

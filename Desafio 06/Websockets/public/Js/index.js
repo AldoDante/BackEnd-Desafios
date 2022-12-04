@@ -66,6 +66,7 @@ function addMessage() {
 
     // enviamos la data al server
     socket.emit('new-message', message);
+    console.log(message);
     return false;
 }
 
