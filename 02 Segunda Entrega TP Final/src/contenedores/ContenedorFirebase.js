@@ -73,14 +73,16 @@ class ContenedorFirebase {
 
     async borrarAll() {        
         try {
-            const batch = db.batch();
-            const snapshot = await this.coleccion.get();
-            snapshot.forEach(doc => {
-                batch.delete(doc.ref)
-            })
-            await batch.commit()
+            const docs = await this.listarAll()
+            const ids = docs.map(d => d.id)
+            const promesas = ids.map(id => this.borrar(id))
+            const resultados = await Promise.allSettled(promesas)
+            const errores = resultados.filter(r => r.status == 'rejected')
+            if (errores.length > 0) {
+                throw new Error('no se borró todo. volver a intentarlo')
+            }
         } catch (error) {
-            throw new Error(`Error al borrar todo: ${error}`)
+            throw new Error(`Error al borrar: ${error}`)
         }
     }
 
