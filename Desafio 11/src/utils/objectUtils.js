@@ -10,7 +10,7 @@ import bCrypt from 'bcrypt'
   return session({
     store: MongoStore.create({
       mongoUrl:
-      'mongodb+srv://aldo7919:spike7919@cluster0.tgkozu1.mongodb.net/ecommerce?retryWrites=true&w=majority',
+      'mongodb+srv://aldo7919:spike7919@cluster0.tgkozu1.mongodb.net/sessions?retryWrites=true&w=majority',
       mongoOptions: advancedOptions,
       ttl: 120,
       collectionName: 'sessions',

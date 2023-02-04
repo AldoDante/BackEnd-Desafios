@@ -6,7 +6,7 @@ export default {
     },
     mongoRemote: {
         client: 'mongodb',
-        cnxStr: 'mongodb+srv://aldo7919:spike7919@cluster0.tgkozu1.mongodb.net/ecommerce?retryWrites=true&w=majority',
+        cnxStr: 'mongodb+srv://aldo7919:spike7919@cluster0.tgkozu1.mongodb.net/sessions?retryWrites=true&w=majority',
         options: {
                 useNewUrlParser: true,
                 useUnifiedTopology: true,

@@ -11,5 +11,18 @@
     "text": "Buenas!",
     "date": "31/1/2023, 17:05:11",
     "id": 1
+  },
+  {
+    "author": {
+      "mail": "dante.acuario79@gmail.com",
+      "name": "Aldo",
+      "lastName": "Antivilo",
+      "age": "43",
+      "username": "Admin",
+      "avatar": ""
+    },
+    "text": "BUENAS2",
+    "date": "4/2/2023, 13:02:07",
+    "id": 2
   }
 ]
