@@ -13,7 +13,7 @@ function createOnMongoStore() {
       ttl: 120,
       collectionName: 'sessions',
     }),
-    secret: 'anarchy123',
+    secret: 'aldo123',
     resave: false,
     saveUninitialized: false,
     cookie: { maxAge: 60000 },
