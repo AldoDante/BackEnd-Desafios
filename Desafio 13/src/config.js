@@ -19,7 +19,7 @@ const argv = minimist(process.argv.slice(2), {
 })
 
 const sessionConfig = {
-    secret: 'anarchy123',
+    secret: 'aldo123',
     resave: false,
     saveUninitialized: false,
     rolling: true,
