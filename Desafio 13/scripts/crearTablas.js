@@ -96,22 +96,7 @@ const knexConnection = knex(options);
               user: "gfchazarreta@mail.com",
               date: "11/24/2022 20:28:23",
               message: "Probando el canal de chat"
-            },
-            {
-              user: "simonellidiego@gmail.com",
-              date: "11/25/2022 19:31:42",
-              message: "hola como va?"
-            },
-            {
-              user: "wffefe",
-              date: "12/01/2022 23:29:00",
-              message: "qdwf"
-            },
-            {
-              user: "dsvsds",
-              date: "1/12/2022 23:29:00",
-              message: "asda"
-            }
+            },            
           ];
         await knexConnection('messages').insert(messages)
 
