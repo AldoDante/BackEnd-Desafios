@@ -15,3 +15,55 @@
   moreInfo: 'https://www.twilio.com/docs/errors/21608',
   details: undefined
 }
+[2023-03-21T09:44:35.143] [ERROR] default - Error: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1535:34)
+    at TLSSocket.emit (node:events:513:28)
+    at TLSSocket._finishInit (node:_tls_wrap:949:8)
+    at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:730:12) {
+  code: 'ESOCKET',
+  command: 'CONN'
+}
+[2023-03-21T09:44:35.583] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: Authenticate
+    at success (C:\Users\dante\OneDrive\Documentos\CODER HOUSE\Practica\Backend\03 Tercera Entrega TP Final\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendMessageNewCart (file:///C:/Users/dante/OneDrive/Documentos/CODER%20HOUSE/Practica/Backend/03%20Tercera%20Entrega%20TP%20Final/src/utils/twilio.js:65:25) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-03-21T09:44:36.300] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
+    at success (C:\Users\dante\OneDrive\Documentos\CODER HOUSE\Practica\Backend\03 Tercera Entrega TP Final\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendMessageNewCart (file:///C:/Users/dante/OneDrive/Documentos/CODER%20HOUSE/Practica/Backend/03%20Tercera%20Entrega%20TP%20Final/src/utils/twilio.js:76:25) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-03-21T09:49:48.302] [ERROR] default - Error: self signed certificate in certificate chain
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1535:34)
+    at TLSSocket.emit (node:events:513:28)
+    at TLSSocket._finishInit (node:_tls_wrap:949:8)
+    at TLSWrap.ssl.onhandshakedone (node:_tls_wrap:730:12) {
+  code: 'ESOCKET',
+  command: 'CONN'
+}
+[2023-03-21T09:49:48.972] [ERROR] default - error AL ENVIAR WHATSAPP new cart RestException [Error]: Authenticate
+    at success (C:\Users\dante\OneDrive\Documentos\CODER HOUSE\Practica\Backend\03 Tercera Entrega TP Final\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendMessageNewCart (file:///C:/Users/dante/OneDrive/Documentos/CODER%20HOUSE/Practica/Backend/03%20Tercera%20Entrega%20TP%20Final/src/utils/twilio.js:65:25) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
+[2023-03-21T09:49:49.734] [ERROR] default - ERROR AL ENVIAR SMS new cart RestException [Error]: Authenticate
+    at success (C:\Users\dante\OneDrive\Documentos\CODER HOUSE\Practica\Backend\03 Tercera Entrega TP Final\node_modules\twilio\lib\base\Version.js:79:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sendMessageNewCart (file:///C:/Users/dante/OneDrive/Documentos/CODER%20HOUSE/Practica/Backend/03%20Tercera%20Entrega%20TP%20Final/src/utils/twilio.js:76:25) {
+  status: 401,
+  code: 20003,
+  moreInfo: 'https://www.twilio.com/docs/errors/20003',
+  details: undefined
+}
