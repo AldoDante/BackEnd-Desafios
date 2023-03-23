@@ -4,7 +4,7 @@ import objectUtils from '../utils/objectUtils.js'
 
 class SessionService {
     constructor() {
-    this.url = 'mongodb+srv://admin:admin@cluster0.bev71ps.mongodb.net/ecommerce'
+    this.url = 'mongodb+srv://aldo7919:spike7919@cluster0.tgkozu1.mongodb.net/sessions?retryWrites=true&w=majority'
     this.mongodb = mongoose.connect
     }
 
